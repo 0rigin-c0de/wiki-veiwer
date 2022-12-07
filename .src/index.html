@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__brand">
+        <img
+          class="header__logo"
+          src="images/logo.png"
+          alt="Wikipedia Logo"
+          height="50"
+        />
+      </div>
+      <div class="header__search-wrap animated shake">
+        <form id="search-form" class="search header__search">
+          <input
+            type="text"
+            name="q"
+            tabindex="1"
+            class="search__input js-search-input"
+            value=""
+            placeholder="Search Wiki"
+            autocomplete="off"
+          />
+          <input type="submit" class="search__button" value="S" />
+          <div class="search__autocomplete">
+            <ul></ul>
+          </div>
+        </form>
+      </div>
+      <div class="header__right">
+        <a
+          href="https://en.wikipedia.org/wiki/Special:Random"
+          class="random-wiki"
+          target="_blank"
+          >Random Wiki</a
+        >
+      </div>
+    </header>
+    <main class="main-container">
+      <section class="article-container">
+        <div class="empty-state animated pulse">
+          <img
+            src="images/icons/ic_search_black_24px.svg"
+            width="150"
+            class="empty-state__image"
+          />
+          <h2 class="empty-state__title">Search Wikipedia</h2>
+        </div>
+      </section>
+    </main>
+    <script type="text/template" id="tpl-article">
+      <article id="{{id}}" class="article animated fadeInUp {{has-image}}">
+          <h3 class="article__heading">{{heading}}</h3>
+          <p class="article__description">{{content}}</p>
+      </article>
+    </script>
+    <script src="main/script.js"></script>
+  </body>
+</html>
