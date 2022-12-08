@@ -16,6 +16,7 @@
 
 .header__logo {
     height: 50px;
+    cursor: pointer;
 }
 
 .header__brand {
