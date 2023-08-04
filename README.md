@@ -19,7 +19,3 @@ You can also click the "Random" button to get a random article from Wikipedia.
 - JavaScript
 - HTML
 - CSS
-
-## Contributing
-
-If you'd like to contribute to the Wiki Viewer web app, feel free to submit a pull request or open an issue.
